@@ -1,0 +1,134 @@
+body{
+    margin: 0;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background: #364219 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 0.22;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    width: 80%;
+    height: 100%;
+    text-align: left;
+}
+.login-container {
+    width: 80%;
+}
+form.login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60vh;
+    background: #85bb08 0% 0% no-repeat padding-box;
+border: 1px solid #707070;
+opacity:1;
+}
+button{
+    background: #ffffffc6 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    width: 40%;
+    border: none;
+    color: black;
+    margin: 1em;;
+    line-height: 3em;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 1em;
+    margin: 1em;
+    width: 70%;
+}
+@media only screen and (max-device-width: 420px)
+{
+    .container{
+        flex-direction: column;
+    }
+    *{
+        font-size: 36px;
+    }
+    .login-container, .logo{
+        width: 100%;
+    }
+    form {
+        margin: auto;
+    margin-bottom: 3em;
+    }
+    
+}
+.base-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+nav{
+    width: 20vw;
+    height: 100%;
+    background: #1a3fb9cf 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 6px #00000029;
+    border: 1px solid #0C0202;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+main{
+    width: 80vw;
+    
+    background: #ffffffcf 0% 0% no-repeat padding-box;
+box-shadow: 0px 6px 6px #00000029;
+border: 1px solid #0C0202;
+
+}
+nav > img{
+    width: 100%;
+    margin: 0em auto;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1em;
+    font: normal normal normal 25px/12px Arial;
+letter-spacing: 0px;
+color: #0C0202;
+}
+li{
+    text-align: left;
+    margin-bottom: 2em;
+}
+li:last-child{
+    position: absolute;
+    bottom: 0;
+    width: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1em,2em;
+    border-bottom: 1px solid gray;
+    
+}
+.search-bar{
+    width: 40%;
+    
+}
+.fa-user {
+    content: "\f007";
+    font-size: 67px;
+}
