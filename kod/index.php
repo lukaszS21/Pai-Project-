@@ -7,5 +7,6 @@ $path = parse_url($path, PHP_URL_PATH);
 
 Routing::get('index',"defalutC");
 Routing::get('project',"defalutC");
+Routing::post('login',"SecurityC");
 Routing::run($path);
 

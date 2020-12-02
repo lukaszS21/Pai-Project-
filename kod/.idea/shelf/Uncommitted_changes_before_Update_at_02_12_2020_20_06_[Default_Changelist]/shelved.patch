@@ -1,0 +1,16 @@
+Index: sorce/models/User.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- sorce/models/User.php	(date 1606935929811)
++++ sorce/models/User.php	(date 1606935929811)
+@@ -0,0 +1,7 @@
++<?php
++
++
++class User
++{
++
++}
+\ No newline at end of file
