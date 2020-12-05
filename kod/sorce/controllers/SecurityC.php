@@ -8,7 +8,7 @@ class SecurityC extends AppController
     {
         $user= new User("john@op.pl",'1234','ola','kot');
         if($this->isPost()){
-            return $this->login('login');
+            return $this->login("login");
         }
 
         $email=$_POST["email"];
