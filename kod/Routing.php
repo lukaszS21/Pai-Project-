@@ -3,28 +3,29 @@
 require_once 'sorce/controllers/defalutC.php';
 require_once 'sorce/controllers/SecurityC.php';
 require_once 'sorce/controllers/ProjectC.php';
-class Routing{
+
+class Router {
+
     public static $routes;
-    public static function get($url,$controller)
-    {
-        self::$routes[$url]=$controller;
 
+    public static function get($url, $view) {
+        self::$routes[$url] = $view;
     }
-    public static function post($url,$controller)
-    {
-        self::$routes[$url]=$controller;
 
+    public static function post($url, $view) {
+        self::$routes[$url] = $view;
     }
-    public static function run($url){
-        $action= explode("/",$url)[0];
-        if(!array_key_exists($action,self::$routes)){
-            die("wrong url");
+
+    public static function run ($url) {
+        $action = explode("/", $url)[0];
+        if (!array_key_exists($action, self::$routes)) {
+            die("Wrong url!");
         }
-        //call controller 
-        $controller =self::$routes[$action];
-        $object = new $controller;
-        
-        $object->$action();
 
+        $controller = self::$routes[$action];
+        $object = new $controller;
+        $action = $action ?: 'index';
+
+        $object->$action();
     }
 }
