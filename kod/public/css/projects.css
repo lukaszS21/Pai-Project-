@@ -29,3 +29,13 @@ section{
     flex-direction: column;
     justify-content: space-between;
 }
+section.projects-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.projects-form>form{
+    display: flex;
+    flex-direction: column;
+}

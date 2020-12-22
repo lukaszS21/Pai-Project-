@@ -2,6 +2,7 @@
 
 require_once 'sorce/controllers/defalutC.php';
 require_once 'sorce/controllers/SecurityC.php';
+require_once 'sorce/controllers/ProjectC.php';
 class Routing{
     public static $routes;
     public static function get($url,$controller)

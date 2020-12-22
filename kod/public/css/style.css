@@ -41,7 +41,7 @@ button{
     margin: 1em;;
     line-height: 3em;
 }
-input{
+input ,textarea{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid gray;

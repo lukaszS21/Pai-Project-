@@ -20,9 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e92dd324-aa4d-4eff-873c-eff6e33d014f" name="Default Changelist" comment="">
+<<<<<<< Updated upstream
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorce/controllers/AppController.php" beforeDir="false" afterPath="$PROJECT_DIR$/sorce/controllers/AppController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sorce/controllers/SecurityC.php" beforeDir="false" afterPath="$PROJECT_DIR$/sorce/controllers/SecurityC.php" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sorce/controllers/ProjectC.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sorce/models/Project.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vievs/addProjects.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/Routing.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/projects.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vievs/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/vievs/projects.php" afterDir="false" />
+>>>>>>> Stashed changes
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,9 +58,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sorce/controllers" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kokol\OneDrive\Pulpit\wetęp do programowanka\Pai-Project-\kod\public\uploads" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kokol\OneDrive\Pulpit\wetęp do programowanka\Pai-Project-\kod\sorce\controllers" />
+      <recent name="C:\Users\kokol\OneDrive\Pulpit\wetęp do programowanka\Pai-Project-\kod\vievs" />
+    </key>
   </component>
   <component name="RunManager" selected="PHP Script.index.php">
     <configuration name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
@@ -80,6 +102,12 @@
       <workItem from="1605724222386" duration="16000" />
       <workItem from="1606935667171" duration="3863000" />
       <workItem from="1606942723095" duration="362000" />
+<<<<<<< Updated upstream
+=======
+      <workItem from="1607266099390" duration="8924000" />
+      <workItem from="1607286116056" duration="3110000" />
+      <workItem from="1608645589290" duration="5576000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
@@ -111,10 +139,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="562" y="62" key="#PHP/0.0.1536.824@0.0.1536.824" timestamp="1603802082038" />
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1606939173771">
+    <state x="915" y="210" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608647523772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1606939173771" />
+    <state x="915" y="210" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.824@0.0.1536.824" timestamp="1608647523772" />
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1608650530836">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="958" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1608650530836" />
     <state x="1087" y="233" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1606936355254">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -135,10 +167,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1342" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603802144681" />
-    <state x="61" y="163" key="NewPhpClassDialog" timestamp="1606936275994">
+    <state x="809" y="227" key="NewPhpClassDialog" timestamp="1608650460232">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="61" y="163" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1606936275994" />
+    <state x="809" y="227" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1608650460232" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606939451567">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
