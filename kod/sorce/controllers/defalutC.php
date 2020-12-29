@@ -12,4 +12,8 @@ class defalutC extends  AppController{
         //display project
         $this->render('projects');
     }
+
+    public function login2(){
+        $this->render('login2');
+    }
 }

@@ -3,7 +3,7 @@
 require_once 'sorce/controllers/defalutC.php';
 require_once 'sorce/controllers/SecurityC.php';
 require_once 'sorce/controllers/ProjectC.php';
-
+require_once 'sorce/controllers/HomeC.php';
 class Router {
 
     public static $routes;

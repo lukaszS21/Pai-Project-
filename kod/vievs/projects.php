@@ -67,5 +67,5 @@
 
         </section>
     </main>
-    </div->
+    </div>
 </body>
