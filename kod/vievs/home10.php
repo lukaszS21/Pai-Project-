@@ -16,17 +16,18 @@
                 </div>
             </div>
             <ul>
-                <li>Twoje Kontakty</li>
-                <li>Twoje Zadania</li>
-                <li>Historia</li>
-                <li>Menu</li>
+                <li><a href="home7" class="button">Twoje Kontakty</a></li>
+                <li><a href="home5" class="button">Kontakt</a></li>
+                <li><a href="home9" class="button">Historia</a></li>
+
+                <li><a href="project" class="button">Menu</a></li>
             </ul>
-            <p>Wyloguj</p>
+            <p><a href="home1" class="button">Wyloguj</a> </p>
         </nav>
         <div class="kontakt">
             <div class="flex">
-                <p>Zadania:</p>
-                <p>Dodaj zadanie:</p>
+                <g>Zadania:</g>
+                <g><a href="home11" class="button">Dodaj Zadanie</a> </g>
             </div>
             <div class="flex">
                 <p>Status: </p>

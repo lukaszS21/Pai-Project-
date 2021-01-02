@@ -9,20 +9,20 @@
 
 
 <body>
-    <div class="container-start blue-background">
-        <nav>
-            <div class="container-logo">
-                <div class="logo">
-                </div>
+<div class="container-start blue-background">
+    <nav>
+        <div class="container-logo">
+            <div class="logo">
             </div>
-            <ul>
-                <li>Twoje Kontakty</li>
-                <li>Twoje Zadania</li>
-                <li>Historia</li>
-                <li>Menu</li>
-            </ul>
-            <p>Wyloguj</p>
-        </nav>
+        </div>
+        <ul>
+            <li><a href="home7" class="button">Twoje Kontakty</a></li>
+            <li><a href="home10" class="button">Twoje Zadania</a></li>
+            <li><a href="home5" class="button">Kontakt</a></li>
+            <li><a href="project" class="button">Menu</a></li>
+        </ul>
+        <p><a href="home1" class="button">Wyloguj</a> </p>
+    </nav>
         <div class="kontakt">
             <div class=flex style="justify-content: flex-start;">
                 <p>Dodaj Osobę:</p>
@@ -44,6 +44,9 @@
             </div>
             <div class="flex" style="justify-content: flex-start;">
                 <input type="text-area" placeholder="Opis">
+            </div>
+            <div class="flex" style="justify-content: flex-start;">
+                <p><a href="#" class="button">Dodaj</a> </p>
             </div>
         </div>
     </div>

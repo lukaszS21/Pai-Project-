@@ -16,12 +16,12 @@
                 </div>
             </div>
             <ul>
-                <li>Twoje Kontakty</li>
-                <li>Twoje Zadania</li>
-                <li>Historia</li>
-                <li>Menu</li>
+                <li><a href="home7" class="button">Twoje Kontakty</a></li>
+                <li><a href="home10" class="button">Twoje Zadania</a></li>
+                <li><a href="home5" class="button">Kontakt</a></li>
+                <li><a href="project" class="button">Menu</a></li>
             </ul>
-            <p>Wyloguj</p>
+            <p><a href="home1" class="button">Wyloguj</a> </p>
         </nav>
         <div class="kontakt">
             <div class=flex style="justify-content: flex-start;">

@@ -12,20 +12,23 @@
         <img src="img/logo.svg">
         <ul>
             <li>
-                <a hfer="#" class="button">Your Contacts</a>
+                <button2 >
+                    <a href="home7" class="button">Twoje Kontakty</a>
+                </button2>
             </li>
             <li>
-                <a hfer="#" class="button">Your Work</a>
+                <a href="home10" class="button">Twoje Zadania</a>
             </li>
             <li>
-                <a hfer="#" class="button">History</a>
+                <a href="home9" class="button">Historia</a>
             </li>
             <li>
-                <a hfer="#" class="button">Author</a>
+                <a href="home5" class="button">Kontakt</a>
             </li>
             <li>
-                <a hfer="#" class="button">Contacts</a>
+                <a href="home1" class="button">Wyloguj</a>
             </li>
+
         </ul>
     </nav>
     <main>

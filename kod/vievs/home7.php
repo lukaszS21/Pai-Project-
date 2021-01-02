@@ -16,48 +16,51 @@
                 </div>
             </div>
             <ul>
-                <li>Twoje Kontakty</li>
-                <li>Twoje Zadania</li>
-                <li>Historia</li>
-                <li>Menu</li>
+
+                <li><a href="home10" class="button">Twoje Zadania</a></li>
+                <li><a href="home9" class="button">Historia</a></li>
+                <li><a href="home5" class="button">Kontakt</a></li>
+                <li><a href="project" class="button">Menu</a></li>
             </ul>
-            <p>Wyloguj</p>
+            <p><a href="home1" class="button">Wyloguj</a> </p>
         </nav>
         <div class="kontakt">
             <div class="flex">
                 <p>Kontakts: </p>
-                <p>Dodaj osobę </p>
-                <p>Dodaj firmę </p>
+                <p class="dodaj">
+                    <a href="home12" class="button">Dodaj osobę</a>
+                </p>
+                <p><a href="home8" class="button">Dodaj firmę</a> </p>
             </div>
             <div class="flex none">
-                <p></p>
-                <p>Kontakt: </p>
-                <p>Imie </p>
-                <p>Telefony</p>
+                <d></d>
+                <d>Kontakt: </d>
+                <d>Imie </d>
+                <d class="phone">Telefony</d>
             </div>
             <div class="flex">
-                <img src="../../asety/entrepreneur-593358_1920.jpg" width="100px" height="100px"
+                <img src="img/entrepreneur-593358_1920.jpg" width="100px" height="100px"
                     style="border-radius: 50%;" />
                 <p>Imie nazwisko </p>
                 <p>Email </p>
                 <p>508999555</p>
             </div>
             <div class="flex">
-                <img src="../../asety/entrepreneur-593358_1920.jpg" width="100px" height="100px"
+                <img src="img/entrepreneur-593358_1920.jpg" width="100px" height="100px"
                     style="border-radius: 50%;" />
                 <p>Imie nazwisko </p>
                 <p>Email </p>
                 <p>508999555</p>
             </div>
             <div class="flex">
-                <img src="../../asety/entrepreneur-593358_1920.jpg" width="100px" height="100px"
+                <img src="img/entrepreneur-593358_1920.jpg" width="100px" height="100px"
                     style="border-radius: 50%;" />
                 <p>Imie nazwisko </p>
                 <p>Email </p>
                 <p>508999555</p>
             </div>
             <div class="flex">
-                <img src="../../asety/entrepreneur-593358_1920.jpg" width="100px" height="100px"
+                <img src="img/entrepreneur-593358_1920.jpg" width="100px" height="100px"
                     style="border-radius: 50%;" />
                 <p>Imie nazwisko </p>
                 <p>Email </p>

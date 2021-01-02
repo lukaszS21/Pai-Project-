@@ -16,7 +16,7 @@
             </div>
             <div>
                 <button >
-                    <a href="home2" class="button">Zaloguj sie</a>
+                    <a href="login2" class="button">Zaloguj sie</a>
                 </button>
 
                 <button >

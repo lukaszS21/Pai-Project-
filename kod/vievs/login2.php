@@ -8,14 +8,14 @@
 
 
 <body>
-    <div class="container-background-image">
-        <div class="container-grid">
-            <div class="container-logo">
-                <div class="logo-form">
-                    <div class="rectangle"></div>
-                </div>
-
+<div class="container-background-image">
+    <div class="container-grid">
+        <div class="container-logo">
+            <div class="logo-form">
+                <img src="img/logo.svg">
             </div>
+
+        </div>
             <div class="form">
                 <form class="login" action="login" method="POST">
                     <label for="login">Login:
@@ -26,7 +26,7 @@
                     <div class="border"></div>
 
                     <button type="submit">Zaloguj</button>
-                    <button>Create an account</button>
+                    <button><a href="home2" class="button">Stwórz konto</a></button>
                 </form>
             </div>
         </div>
