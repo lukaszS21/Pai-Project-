@@ -8,15 +8,19 @@
 
 <body>
     <div class="container-background-image">
-        <nav>
+        <nav >
             <div class="container-logo">
                 <div class="logo">
-                    <div class="logo-home"></div>
+
                 </div>
             </div>
             <div>
-                <button>Zaloguj się</button>
-                <button>Stwórz konto</button>
+                <button >
+                    <a href="home2" class="button">Zaloguj sie</a>
+                </button>
+
+                <button >
+                    <a href="home2" class="button">Stwórz konto</a></button>
             </div>
         </nav>
         <div class="container">

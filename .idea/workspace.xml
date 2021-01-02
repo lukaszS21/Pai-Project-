@@ -20,29 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aa89035a-98dc-4703-8e36-0f1018ad0b40" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Pai-Project-.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/sorce/controllers/HomeC.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home1.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home10.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home11.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home12.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home2.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home3.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home4.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home5.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home6.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home7.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home8.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/home9.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kod/vievs/login2.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod/Routing.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/Routing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod/public/css/projects.css" beforeDir="false" afterPath="$PROJECT_DIR$/kod/public/css/projects.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/kod/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/kod/public/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kod/sorce/controllers/defalutC.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/sorce/controllers/defalutC.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/sorce/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/sorce/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/sorce/repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/sorce/repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/home1.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/home1.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/home10.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/home10.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/home11.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/home11.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/home12.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/home12.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/home5.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/home5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/home6.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/home6.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/login2.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/login2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/kod/vievs/projects.php" beforeDir="false" afterPath="$PROJECT_DIR$/kod/vievs/projects.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +71,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609253305379</updated>
-      <workItem from="1609253306564" duration="2553000" />
+      <workItem from="1609253306564" duration="3156000" />
+      <workItem from="1609263436281" duration="1503000" />
+      <workItem from="1609265379382" duration="1880000" />
+      <workItem from="1609543606767" duration="4720000" />
     </task>
     <servers />
   </component>
@@ -98,6 +91,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />

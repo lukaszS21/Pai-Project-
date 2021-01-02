@@ -17,15 +17,15 @@
 
             </div>
             <div class="form">
-                <form>
+                <form class="login" action="login" method="POST">
                     <label for="login">Login:
-                        <input id="login" name="login" type="text" /></label></br>
+                        <input name="email" type="email" placeholder="email@email.com"" /></label></br>
                     <div class="border"></div>
                     <label for="password">Password:
-                        <input name="password" type="password" /></label></br>
+                        <input name="password" type="password" placeholder="password" /></label></br>
                     <div class="border"></div>
-               
-                    <button>Zaloguj</button>
+
+                    <button type="submit">Zaloguj</button>
                     <button>Create an account</button>
                 </form>
             </div>

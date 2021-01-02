@@ -16,9 +16,10 @@
                 </div>
             </div>
             <ul>
-                <li>Your Work</li>
-                <li>History</li>
-                <li>Authors</li>
+                <li>Twoje Kontakty</li>
+                <li>Twoje Zadania</li>
+                <li>Historia</li>
+                <li>Menu</li>
             </ul>
             <p>Wyloguj</p>
         </nav>
