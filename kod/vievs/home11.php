@@ -46,7 +46,7 @@
                 <input type="text-area" placeholder="Opis">
             </div>
             <div class="flex" style="justify-content: flex-start;">
-                <p><a href="#" class="button">Dodaj</a> </p>
+                <button type="submit">send</button>
             </div>
         </div>
     </div>

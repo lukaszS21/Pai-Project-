@@ -7,9 +7,7 @@ class HomeC extends  AppController{
     public function home1(){
         $this->render('home1');
     }
-    public function home2(){
-        $this->render('home2');
-    }
+
     public function home3(){
         $this->render('home3');
     }

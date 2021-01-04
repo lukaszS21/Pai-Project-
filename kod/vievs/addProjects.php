@@ -41,7 +41,7 @@
         </header>
         <section class="projects-form">
             <h1>UPLOAD</h1>
-            <form action="addProject" method="POST" ENCTYPE="multipart/form-data">
+            <form class="addProject" action="addProject" method="POST" ENCTYPE="multipart/form-data">
                 <?php if(isset($messages))
                 {
                     foreach ($messages as $message) {
@@ -49,9 +49,12 @@
                     }
                 }
                 ?>
-                <input name="title" type="text" placeholder="title">
-                <textarea name="description" rows="5" placeholder="description"></textarea>
+                <input name="name" type="text" placeholder="name">
+                <input name="email" type="text" placeholder="email">
                 <input type="file" name="file">
+                <input name="phone" type="text" placeholder="phone">
+                <textarea name="description" rows="5" placeholder="description"></textarea>
+
                 <button type="submit">send</button>
             </form>
 

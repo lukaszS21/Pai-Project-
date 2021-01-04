@@ -2,6 +2,7 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/home5.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
     <title>Home5</title>
@@ -9,23 +10,22 @@
 
 
 <body>
-    <div class="image-start">
-        <div class="container-start">
-            <nav>
-                <div class="container-logo">
-                    <div class="logo">
-                    </div>
-                </div>
-                <ul>
-                    <li><a href="home7" class="button">Twoje Kontakty</a></li>
-                    <li><a href="home10" class="button">Twoje Zadania</a></li>
-                    <li><a href="home9" class="button">Historia</a></li>
 
-                    <li><a href="project" class="button">Menu</a></li>
+<div class="container-background-image">
+    <nav>
+        <div class="container-logo">
+            <div class="logo">
+            </div>
+        </div>
+        <ul>
+                <li><a href="home7" class="button">Twoje Kontakty</a></li>
+                <li><a href="home10" class="button">Twoje Zadania</a></li>
+                <li><a href="home9" class="button">Historia</a></li>
 
-                </ul>
-                <p><a href="home1" class="button">Wyloguj</a> </p>
-            </nav>
+                <li><a href="project" class="button">Menu</a></li>
+            </ul>
+            <p><a href="home1" class="button">Wyloguj</a> </p>
+    </nav>
             <div class="contact">
                 <div>
                     <h1 style="

@@ -12,7 +12,7 @@ Router::post('addProject',"ProjectC");
 
 Router::post('login2',"defalutC");
 Router::post('home1',"HomeC");
-Router::post('home2',"HomeC");
+Router::post('register',"SecurityC");
 Router::post('home3',"HomeC");
 Router::post('home4',"HomeC");
 Router::post('home5',"HomeC");

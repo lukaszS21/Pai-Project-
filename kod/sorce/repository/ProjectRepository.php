@@ -21,9 +21,12 @@ class ProjectRepository extends Repository
         }
 
         return new Project(
-            $project['title'],
-            $project['description'],
-            $project['image']
+            $project['name'],
+            $project['email'],
+            $project['image'],
+            $project['phone'],
+            $project['description']
+
         );
     }
 
@@ -31,19 +34,42 @@ class ProjectRepository extends Repository
     {
         $date = new DateTime();
         $stmt = $this->database->connect()->prepare('
-            INSERT INTO projects (title, description, created_at, id_assigned_by, image)
-            VALUES (?, ?, ?, ?, ?)
+            INSERT INTO projects (name,email,created_at, id_assigned_by, image,phone,description)
+            VALUES (?, ?, ?, ?, ?,?,?)
         ');
 
-        //TODO you should get this value from logged user session
         $assignedById = 1;
 
         $stmt->execute([
-            $project->getTitle(),
-            $project->getDescription(),
+            $project->getName(),
+            $project->getEmail(),
             $date->format('Y-m-d'),
             $assignedById,
-            $project->getImage()
+            $project->getImage(),
+            $project->getPhone(),
+            $project->getDescription()
         ]);
+    }
+    public function getProjects(): array
+    {
+        $result = [];
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM projects;
+        ');
+        $stmt->execute();
+        $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($projects as $project) {
+            $result[] = new Project(
+                $project['name'],
+                $project['email'],
+                $project['image'],
+                $project['phone'],
+                $project['description']
+            );
+        }
+
+        return $result;
     }
 }

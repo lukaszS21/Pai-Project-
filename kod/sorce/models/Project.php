@@ -3,26 +3,51 @@
 
 class Project
 {
-    private $title;
+    private $name;
+    private $email;
     private $description;
     private $image;
+    private $phone;
 
-    public function __construct($title,$description,$image)
+    public function __construct($name,$email,$image,$phone,$description)
     {
-        $this->title=$title;
-        $this->description=$description;
+        $this->name=$name;
+        $this->email=$email;
         $this->image=$image;
+        $this->phone=$phone;
+        $this->description=$description;
+
     }
 
-    public function getTitle(): string
+    public function getName(): string
     {
-        return $this->title;
+        return $this->name;
     }
 
 
-    public function setTitle(string $title)
+    public function setPhone(string $phone)
     {
-        $this->title = $title;
+        $this->phone = $phone;
+    }
+    public function getPhone(): string
+    {
+        return $this->phone;
+    }
+
+
+    public function setName(string $name)
+    {
+        $this->name = $name;
+    }
+    public function getEmail(): string
+    {
+        return $this->email;
+    }
+
+
+    public function setEmail(string $email)
+    {
+        $this->email = $email;
     }
 
 

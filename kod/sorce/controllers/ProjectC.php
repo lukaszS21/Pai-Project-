@@ -8,7 +8,7 @@ class ProjectC extends AppController
     const MAX_FILE_SIZE=1024*1024;
     const SUPORTED_TYPES=["image/png",'image/jpeg'];
     const UPLOAD_DIRECTORY='/../public/uploads/';
-    private $messages=[];
+    private $message = [];
     private $projectRepository;
 
 
@@ -27,22 +27,22 @@ class ProjectC extends AppController
                 dirname(__DIR__).self::UPLOAD_DIRECTORY.$_FILES['file']['name']
 
             );
-            $project=new Project($_POST['title'],$_POST['description'],$_FILES['file']['name']);
+            $project=new Project($_POST['name'],$_POST['email'],$_FILES['file']['name'],$_POST['phone'],$_POST['description']);
             $this->projectRepository->addProject($project);
-            return $this->render('projects',['messages' =>$this->messages, 'project'=>$project]);
+            return $this->render('projects', ['messages' => $this->message, 'projects' => $this->projectRepository->getProjects()]);
         }
-        $this->render('addProjects',['messages' =>$this->messages]);
 
+        return $this->render('addProjects', ['messages' => $this->message]);
     }
 
     private function validate(array $file):bool
     {
         if($file['size']>self::MAX_FILE_SIZE){
-        $this->messages[]="File is too large";
-        return false;
+            $this->message[]="File is too large";
+            return false;
         }
         if(isset($file["type"]) && !in_array($file['type'],self::SUPORTED_TYPES)){
-            $this->messages[]="File type is nnot supported";
+            $this->message[]="File type is nnot supported";
             return false;
         }
         return true;

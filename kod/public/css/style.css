@@ -104,6 +104,7 @@ body {
     }
     nav ul {
         display: none;
+
     }
     .contact button {
         width: 300px;
@@ -295,6 +296,7 @@ body {
     }
     li{
         margin-left: 50px;
+
     }
     .contact button {
         width: 370px;
@@ -512,4 +514,10 @@ g{
     opacity: 0.9;
     margin-left: -6em;
 
+}
+.no-valid{
+    border:3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
 }

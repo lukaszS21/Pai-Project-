@@ -6,8 +6,6 @@
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
     <title>Home12</title>
 </head>
-
-
 <body>
 <div class="container-start blue-background">
     <nav>
@@ -23,10 +21,12 @@
         </ul>
         <p><a href="home1" class="button">Wyloguj</a> </p>
     </nav>
-        <div class="kontakt">
+    <div class="kontakt">
+
             <div class=flex style="justify-content: flex-start;">
                 <p>Dodaj Osobę:</p>
             </div>
+            <input name="title" type="text" placeholder="title">
             <div class="flex" style="justify-content: flex-start;">
                 <input type="text" placeholder="Imie/Nazwisko:">
             </div>
@@ -48,8 +48,8 @@
             <div class="flex" style="justify-content: flex-start;">
                 <p><a href="#" class="button">Dodaj</a> </p>
             </div>
-        </div>
+        </form>
     </div>
-    </div>
-
+</div>
+</div>
 </body>
