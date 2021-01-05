@@ -1,64 +1,52 @@
 <!DOCTYPE html>
+
 <head>
-    <link rel="stylesheet" type="text/css" href="public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="public/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
-    <title>PROJECTS</title>
+    <title>Home12</title>
 </head>
-
 <body>
-<div class="base-container">
+<div class="container-start blue-background">
     <nav>
-        <img src="img/logo.svg">
+        <div class="container-logo">
+            <div class="logo">
+            </div>
+        </div>
         <ul>
-            <li>
-                <a hfer="home5" class="button">Your Contacts</a>
-            </li>
-            <li>
-                <a hfer="#" class="button">Your Work</a>
-            </li>
-            <li>
-                <a hfer="#" class="button">History</a>
-            </li>
-            <li>
-                <a hfer="#" class="button">Author</a>
-            </li>
-            <li>
-                <a hfer="#" class="button">Contacts</a>
-            </li>
+            <li><a href="home7" class="button">Twoje Kontakty</a></li>
+            <li><a href="home10" class="button">Twoje Zadania</a></li>
+            <li><a href="home5" class="button">Kontakt</a></li>
+            <li><a href="project" class="button">Menu</a></li>
+
         </ul>
+        <p><a href="home1" class="button">Wyloguj</a> </p>
     </nav>
-    <main>
-        <header>
-            <div class="user">
-                <i class="fas fa-user"></i>
+    <div class="kontakt">
+            <div class=flex style="justify-content: flex-start;">
+                <p>Dodaj Osobę:</p>
             </div>
-            <div class="search-bar">
-                <form>
-                    <input placeholder="search">
-                </form>
-            </div>
-        </header>
-        <section class="projects-form">
-            <h1>UPLOAD</h1>
-            <form class="addProject" action="addProject" method="POST" ENCTYPE="multipart/form-data">
-                <?php if(isset($messages))
-                {
-                    foreach ($messages as $message) {
-                        echo $messages;
-                    }
-                }
-                ?>
+        <form class="addProject" action="addProject" method="POST" ENCTYPE="multipart/form-data">
                 <input name="name" type="text" placeholder="name">
+
+              <div class="flex" style="justify-content: flex-start;">
                 <input name="email" type="text" placeholder="email">
+            </div>
+            <div class="flex" style="justify-content: flex-start;">
                 <input type="file" name="file">
+            </div>
+            <div class="flex" style="justify-content: flex-start;">
                 <input name="phone" type="text" placeholder="phone">
+            </div>
+            <div class=flex style="justify-content: flex-start;">
                 <textarea name="description" rows="5" placeholder="description"></textarea>
+            </div>
 
-                <button type="submit">send</button>
-            </form>
-
-        </section>
-    </main>
+            <div class="flex" style="justify-content: flex-start;">
+                <p><button type="submit">send</button> </p>
+            </div>
+        </form>
+    </div>
+</div>
 </div>
 </body>

@@ -16,7 +16,7 @@ class SecurityC extends AppController{
             $userRepository = new UserRepository();
 
             if (!$this->isPost()) {
-                return $this->render('login');
+                return $this->render('login2');
             }
 
             $email = $_POST['email'];
@@ -25,19 +25,19 @@ class SecurityC extends AppController{
             $user = $userRepository->getUser($email);
 
             if (!$user) {
-                return $this->render('login', ['messages' => ['User not found!']]);
+                return $this->render('login2', ['messages' => ['User not found!']]);
             }
 
             if ($user->getEmail() !== $email) {
-                return $this->render('login', ['messages' => ['User with this email not exist!']]);
+                return $this->render('login2', ['messages' => ['User with this email not exist!']]);
             }
 
             if ($user->getPassword() !== $password) {
-                return $this->render('login', ['messages' => ['Wrong password!']]);
+                return $this->render('login2', ['messages' => ['Wrong password!']]);
             }
 
             $url = "http://$_SERVER[HTTP_HOST]";
-            header("Location: {$url}/project");
+            header("Location: {$url}/menu");
         }
 
     public function register()
@@ -63,6 +63,6 @@ class SecurityC extends AppController{
 
         $this->userRepository->addUser($user);
 
-        return $this->render('projects', ['messages' => ['You\'ve been succesfully registrated!']]);
+        return $this->render('menu', ['messages' => ['You\'ve been succesfully registrated!']]);
     }
 }

@@ -8,9 +8,9 @@ class defalutC extends  AppController{
         $this->render('login');
 
     }
-    public function project(){
+    public function menu(){
         //display project
-        $this->render('projects');
+        $this->render('menu');
     }
 
     public function login2(){

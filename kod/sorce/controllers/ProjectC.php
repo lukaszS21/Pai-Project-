@@ -17,6 +17,11 @@ class ProjectC extends AppController
         parent::__construct();
         $this->projectRepository = new ProjectRepository();
     }
+    public function projects()
+    {
+        $projects = $this->projectRepository->getProjects();
+        $this->render('projects', ['projects' => $projects]);
+    }
 
     public function addProject()
     {

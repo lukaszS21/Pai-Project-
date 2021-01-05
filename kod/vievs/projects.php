@@ -1,74 +1,70 @@
 <!DOCTYPE html>
-<head>
 
-    <link rel="stylesheet" type="text/css" href="public/css/projects.css">
+<head>
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
-    <title>PROJECTS</title>
+    <title>Home7</title>
 </head>
 
+
 <body>
-<div class="base-container">
-    <nav>
-        <img src="img/logo.svg">
-        <ul>
-            <li>
-                <button2 >
-                    <a href="home7" class="button">Twoje Kontakty</a>
-                </button2>
-            </li>
-            <li>
-                <a href="home10" class="button">Twoje Zadania</a>
-            </li>
-            <li>
-                <a href="home9" class="button">Historia</a>
-            </li>
-            <li>
-                <a href="home5" class="button">Kontakt</a>
-            </li>
-            <li>
-                <a href="home1" class="button">Wyloguj</a>
-            </li>
+    <div class="container-start blue-background">
+        <nav>
+            <div class="container-logo">
+                <div class="logo">
+                </div>
+            </div>
+            <ul>
 
-        </ul>
-    </nav>
-    <main>
-        <header>
-            <div class="user">
-                <i class="fas fa-user"></i>
+                <li><a href="home10" class="button">Twoje Zadania</a></li>
+                <li><a href="home9" class="button">Historia</a></li>
+                <li><a href="home5" class="button">Kontakt</a></li>
+                <li><a href="project" class="button">Menu</a></li>
+                <div class="search-bar">
+                    <form>
+                        <input placeholder="search">
+                    </form>
+                </div>
+            </ul>
+            <p><a href="home1" class="button">Wyloguj</a> </p>
+        </nav>
+
+        <div class="kontakt">
+            <div class="flex">
+                <p>Kontakts: </p>
+                <p class="dodaj">
+                    <a href="home12" class="button">Dodaj osobę</a>
+                </p>
+                <p><a href="home8" class="button">Dodaj firmę</a> </p>
             </div>
-            <div class="search-bar">
-                <form>
-                    <input placeholder="search">
-                </form>
+            <div class="flex none">
+                <d></d>
+                <d>Kontakt: </d>
+                <d>Imie </d>
+                <d class="phone">Telefony</d>
             </div>
-        </header>
-        <section class="projects">
+
             <div id="project-1">
-                <img src="public/uploads/<?=$project->getImage()?>">
-                <div>
-                    <h2><?=$project->getTitle()?></h2>
-                    <p><?=$project->getDescription()?></p>
-                    <div class="social">
-                        <i class="fas fa-heart"> 600</i>
-                        <i class="fas fa-minus-square"> 101</i>
-                    </div>
-                </div>
-            </div>
-            <div id="project-2">
-                <img src="img/12.jpg">
-                <div>
-                    <h2>Title</h2>
-                    <p>description</p>
-                    <div class="social">
-                        <i class="fas fa-heart"> 600</i>
-                        <i class="fas fa-minus-square"> 101</i>
-                    </div>
-                </div>
-            </div>
-            <div> project 3</div>
-            <div> project 4</div>
+                <section class="projects">
+                    <?php foreach($projects as $project): ?>
+                        <div id="project-1">
 
-        </section>
-    </main>
-    </div>
+                            <div class="flex">
+                                <img src="../public/uploads/<?= $project->getImage(); ?>" width="100px" height="100px"
+                                     style="border-radius: 50%;" />
+                                <p><?= $project->getName(); ?></p>
+                                <p><?= $project->getEmail(); ?></p>
+                                <p><?= $project->getPhone(); ?></p>
+
+                            </div>
+
+                        </div>
+
+                    <?php endforeach; ?>
+                </section>
+            </div>
+        </div>
+
+
 </body>

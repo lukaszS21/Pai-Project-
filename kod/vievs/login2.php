@@ -26,7 +26,7 @@
                     <div class="border"></div>
 
                     <button type="submit">Zaloguj</button>
-                    <button><a href="home2" class="button">Stwórz konto</a></button>
+                    <button><a href="register" class="button">Stwórz konto</a></button>
                 </form>
             </div>
         </div>
