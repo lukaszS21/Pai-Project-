@@ -18,11 +18,11 @@
             </div>
         </div>
         <ul>
-                <li><a href="home7" class="button">Twoje Kontakty</a></li>
+                <li><a href="projects" class="button">Twoje Kontakty</a></li>
                 <li><a href="home10" class="button">Twoje Zadania</a></li>
                 <li><a href="home9" class="button">Historia</a></li>
 
-                <li><a href="project" class="button">Menu</a></li>
+                <li><a href="menu" class="button">Menu</a></li>
             </ul>
             <p><a href="home1" class="button">Wyloguj</a> </p>
     </nav>

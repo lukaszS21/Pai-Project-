@@ -20,7 +20,7 @@
                 </button>
 
                 <button >
-                    <a href="home2" class="button">Stwórz konto</a></button>
+                    <a href="register" class="button">Stwórz konto</a></button>
             </div>
         </nav>
         <div class="container">

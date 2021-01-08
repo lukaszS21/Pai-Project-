@@ -42,32 +42,8 @@
                 </form>
             </div>
         </header>
-        <section class="projects">
-            <div id="project-1">
-                <img src="public/uploads/<?=$project->getImage()?>">
-                <div>
-                    <h2><?=$project->getTitle()?></h2>
-                    <p><?=$project->getDescription()?></p>
-                    <div class="social">
-                        <i class="fas fa-heart"> 600</i>
-                        <i class="fas fa-minus-square"> 101</i>
-                    </div>
-                </div>
-            </div>
-            <div id="project-2">
-                <img src="img/12.jpg">
-                <div>
-                    <h2>Title</h2>
-                    <p>description</p>
-                    <div class="social">
-                        <i class="fas fa-heart"> 600</i>
-                        <i class="fas fa-minus-square"> 101</i>
-                    </div>
-                </div>
-            </div>
-            <div> project 3</div>
-            <div> project 4</div>
-
+        <section  >
+           <v>KONTENT</v>
         </section>
     </main>
     </div>

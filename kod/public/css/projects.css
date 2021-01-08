@@ -77,29 +77,6 @@ input ,textarea{
     margin: 1em;
     width: 70%;
 }
-@media only screen and (max-device-width: 420px)
-{
-    .container{
-        flex-direction: column;
-    }
-    *{
-        font-size: 36px;
-    }
-    .login-container, .logo{
-        width: 100%;
-    }
-    form {
-        margin: auto;
-        margin-bottom: 3em;
-    }
-
-}
-.base-container{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-}
 nav{
     width: 20vw;
     height: 100%;
@@ -110,6 +87,13 @@ nav{
     flex-direction: column;
     justify-content: start;
 }
+.base-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+}
+
 main{
     width: 80vw;
 
@@ -148,7 +132,7 @@ main{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 1em,2em;
+    padding: 1em 2em;
     border-bottom: 1px solid gray;
 
 }
@@ -159,4 +143,31 @@ header{
 .fa-user {
     content: "\f007";
     font-size: 67px;
+}
+@media only screen and (max-device-width: 400px)
+{
+    .container{
+        flex-direction: column;
+    }
+    *{
+        font-size: 36px;
+    }
+    .login-container, .logo{
+        width: 100%;
+    }
+    form {
+        margin: auto;
+        margin-bottom: 3em;
+    }
+    nav{
+        width: 50vw;
+        height: 100%;
+        background: #1a3fb9cf 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 6px #00000029;
+        border: 1px solid #0C0202;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
 }

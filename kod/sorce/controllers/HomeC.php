@@ -11,6 +11,9 @@ class HomeC extends  AppController{
     public function home3(){
         $this->render('home3');
     }
+    public function htest(){
+        $this->render('htest');
+    }
     public function home4(){
         $this->render('home4');
     }

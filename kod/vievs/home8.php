@@ -16,33 +16,35 @@
                 </div>
             </div>
             <ul>
-                <li>Twoje Kontakty</li>
-                <li>Twoje Zadania</li>
-                <li>Historia</li>
-                <li>Menu</li>
+                <li><a href="projects" class="button">Twoje Kontakty</a></li>
+                <li><a href="home10" class="button">Twoje Zadania</a></li>
+                <li><a href="home5" class="button">Kontakt</a></li>
+                <li><a href="home9" class="button">Historia</a></li>
+
+                <li><a href=""menu"" class="button">Menu</a></li>
             </ul>
             <p>Wyloguj</p>
         </nav>
         <div class="kontakt">
-            <div class=flex style="justify-content: flex-start;">
+            <div class=flex2 style="justify-content: flex-start;">
                 <p>Dodaj Firmę:</p>
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <input type="text" placeholder="Company name:">
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <input type="text" placeholder="Company email:">
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <input type="text" placeholder="Company phone:">
             </div>
-            <div class=flex style="justify-content: flex-start;">
+            <div class=flex2 >
                 <p>Dodaj zdjecie:</p>
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <input type="file" placeholder="zdjecie:">
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <input type="text-area" placeholder="Opis">
             </div>
         </div>

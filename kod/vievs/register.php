@@ -24,6 +24,15 @@
             </div>
             <div class="form">
                 <form class="register" action="register" method="POST">
+                    <div class="messages">
+                        <?php
+                        if(isset($messages)){
+                            foreach($messages as $message) {
+                                echo $message;
+                            }
+                        }
+                        ?>
+                    </div>
                     <input name="email" type="text" placeholder="email@email.com">
                     <input name="password" type="password" placeholder="password">
                     <input name="confirmedPassword" type="password" placeholder="confirm password">

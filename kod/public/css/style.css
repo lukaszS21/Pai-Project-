@@ -103,7 +103,25 @@ body {
         justify-content: space-between;
     }
     nav ul {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        text-align: left;
+        font: normal normal normal 15px/10px Segoe UI;
+        letter-spacing: 0px;
+        font-weight: bold;
+        color: #000000;
+        justify-content: space-between;
+    }
+    p{
+        list-style-type: none;
+        text-align: left;
+        font: normal normal normal 15px/10px Segoe UI;
+        letter-spacing: 0px;
+        font-weight: bold;
+        color: #000000;
+    }
+
 
     }
     .contact button {
@@ -150,7 +168,70 @@ body {
     .none {
         display: none;
     }
+
+p{
+    margin-block-start: 0.7em;
+    margin-block-end: 0em;
+    font-size: x-large;
+    margin: 1.5em;
 }
+p.dodaj{
+
+    margin-left: 25em;
+}
+d{
+    margin-block-start: 0.7em;
+    margin-block-end: 0em;
+    font-size: x-large;
+    margin-left: -14em;
+}
+d.phone{
+    margin-right: -2em;
+}
+g{
+    margin-block-start: 0.7em;
+    margin-block-end: 0em;
+    font-size: x-large;
+    margin: 1.5em;
+    font: normal normal normal 30px/12px Arial;
+    letter-spacing: 0px;
+    color: #0c0202;
+    opacity: 0.9;
+    margin-left: -6em;
+
+}
+.no-valid{
+    border:3px solid red;
+    border-radius: 1em;
+    box-shadow: 0 0 0.2em red;
+    outline: none;
+}
+.search-bar{
+    margin-left: 3em;
+
+    box-shadow: 0px 3px 6px #00000029;
+    width: 25%;
+    background: rgb(36,0,20);
+    background: linear-gradient(90deg, rgba(36,0,20,1) 0%, rgba(221,212,212,1) 0%, rgba(153,218,186,1) 0%);
+}
+.flex>img{
+    width :100px ;
+    height:100px;
+    border-radius: 50%;
+}
+.flex2{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #707070;
+}
+.flex2 input {
+    justify-content: flex-start;
+    background-color: #fff;
+}
+
 @media screen and (min-width: 600px) {
     .container-grid {
         display: grid;
@@ -331,6 +412,7 @@ body {
     }
 
     .flex {
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
@@ -402,6 +484,7 @@ nav {
     justify-content: space-between;
     border-bottom: 1px solid #707070;
 }
+
 nav button {
     width: auto;
     border-radius: 23px;
@@ -465,8 +548,27 @@ nav button {
     letter-spacing: 0px;
     color: #0d0d0d;
 }
+.flex2 p {
+    width: 250px;
+    font: normal normal bold 21px/12px Arial;
+    letter-spacing: 0px;
+    color: #0d0d0d;
+}
+.flex j{
+    width: 250px;
+    font: normal normal bold 21px/12px Arial;
+    letter-spacing: 0px;
+    color: #0d0d0d;
+}
+.flex k{
+    width: 250px;
+    font: normal normal bold 21px/12px Arial;
+    letter-spacing: 0px;
+    color: #0d0d0d;
+}
 
 .flex input {
+    justify-content: flex-start;
     background-color: #fff;
 }
 a.button{
@@ -485,49 +587,4 @@ a:hover{
 .container p{
     font-size:35px;
 
-}
-p{
-    margin-block-start: 0.7em;
-    margin-block-end: 0em;
-    font-size: x-large;
-    margin: 1.5em;
-}
-p.dodaj{
-
-    margin-left: 25em;
-}
-d{
-    margin-block-start: 0.7em;
-    margin-block-end: 0em;
-    font-size: x-large;
-    margin-left: -14em;
-}
-d.phone{
-    margin-right: -2em;
-}
-g{
-    margin-block-start: 0.7em;
-    margin-block-end: 0em;
-    font-size: x-large;
-    margin: 1.5em;
-    font: normal normal normal 30px/12px Arial;
-    letter-spacing: 0px;
-    color: #0c0202;
-    opacity: 0.9;
-    margin-left: -6em;
-
-}
-.no-valid{
-    border:3px solid red;
-    border-radius: 1em;
-    box-shadow: 0 0 0.2em red;
-    outline: none;
-}
-.search-bar{
-    margin-left: 3em;
-
-    box-shadow: 0px 3px 6px #00000029;
-    width: 25%;
-    background: rgb(36,0,20);
-    background: linear-gradient(90deg, rgba(36,0,20,1) 0%, rgba(221,212,212,1) 0%, rgba(153,218,186,1) 0%);
 }

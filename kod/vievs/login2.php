@@ -18,6 +18,15 @@
         </div>
             <div class="form">
                 <form class="login" action="login" method="POST">
+                    <div class="messages">
+                        <?php
+                        if(isset($messages)){
+                            foreach($messages as $message) {
+                                echo $message;
+                            }
+                        }
+                        ?>
+                    </div>
                     <label for="login">Login:
                         <input name="email" type="email" placeholder="email@email.com"" /></label></br>
                     <div class="border"></div>

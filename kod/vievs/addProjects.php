@@ -14,35 +14,37 @@
             </div>
         </div>
         <ul>
-            <li><a href="home7" class="button">Twoje Kontakty</a></li>
+            <li><a href="projects" class="button">Twoje Kontakty</a></li>
             <li><a href="home10" class="button">Twoje Zadania</a></li>
             <li><a href="home5" class="button">Kontakt</a></li>
-            <li><a href="project" class="button">Menu</a></li>
+            <li><a href="home9" class="button">Historia</a></li>
+            <li><a href="menu" class="button">Menu</a></li>
 
         </ul>
         <p><a href="home1" class="button">Wyloguj</a> </p>
     </nav>
     <div class="kontakt">
-            <div class=flex style="justify-content: flex-start;">
+            <div class=flex >
                 <p>Dodaj Osobę:</p>
             </div>
         <form class="addProject" action="addProject" method="POST" ENCTYPE="multipart/form-data">
+            <div class="flex2" ">
                 <input name="name" type="text" placeholder="name">
-
-              <div class="flex" style="justify-content: flex-start;">
+            </div>
+              <div class="flex2" >
                 <input name="email" type="text" placeholder="email">
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <input type="file" name="file">
             </div>
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" ">
                 <input name="phone" type="text" placeholder="phone">
             </div>
-            <div class=flex style="justify-content: flex-start;">
-                <textarea name="description" rows="5" placeholder="description"></textarea>
+            <div class=flex2 >
+                <input name="description" rows="3" placeholder="description"></input>
             </div>
 
-            <div class="flex" style="justify-content: flex-start;">
+            <div class="flex2" >
                 <p><button type="submit">send</button> </p>
             </div>
         </form>

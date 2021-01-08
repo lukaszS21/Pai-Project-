@@ -29,6 +29,7 @@ class Project
     {
         $this->phone = $phone;
     }
+
     public function getPhone(): string
     {
         return $this->phone;
@@ -39,6 +40,7 @@ class Project
     {
         $this->name = $name;
     }
+
     public function getEmail(): string
     {
         return $this->email;

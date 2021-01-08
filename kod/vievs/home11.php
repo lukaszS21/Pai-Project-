@@ -16,38 +16,40 @@
             </div>
         </div>
         <ul>
-            <li><a href="home7" class="button">Twoje Kontakty</a></li>
+            <li><a href="projects" class="button">Twoje Kontakty</a></li>
             <li><a href="home10" class="button">Twoje Zadania</a></li>
             <li><a href="home5" class="button">Kontakt</a></li>
-            <li><a href="project" class="button">Menu</a></li>
+            <li><a href="menu" class="button">Menu</a></li>
         </ul>
         <p><a href="home1" class="button">Wyloguj</a> </p>
     </nav>
         <div class="kontakt">
-            <div class=flex style="justify-content: flex-start;">
+            <div class=flex2 >
                 <p>Dodaj Zadanie:</p>
             </div>
-            <div class="flex" style="justify-content: flex-start;">
-                <input type="text" placeholder="Nazwa zadania:">
-            </div>
-            <div class="flex" style="justify-content: flex-start;">
-                <input type="text" placeholder="Na kiedy:">
-            </div>
-            <div class="flex" style="justify-content: flex-start;">
-                <input type="text" placeholder="Kategoria:">
-            </div>
-            <div class=flex style="justify-content: flex-start;">
-                <p>Dodaj zdjecie:</p>
-            </div>
-            <div class="flex" style="justify-content: flex-start;">
-                <input type="file" placeholder="zdjecie:">
-            </div>
-            <div class="flex" style="justify-content: flex-start;">
-                <input type="text-area" placeholder="Opis">
-            </div>
-            <div class="flex" style="justify-content: flex-start;">
-                <button type="submit">send</button>
-            </div>
+            <form class="addProject_z" action="addProject_z" method="POST" ENCTYPE="multipart/form-data">
+                <div class="flex2" >
+                    <input name="name_z" type="text" placeholder="Nazwa zadania:">
+                </div>
+                <div class="flex2" >
+                    <input name="data_z" type="text" placeholder="Na kiedy:">
+                </div>
+                <div class="flex2" >
+                    <input type="text" placeholder="Kategoria:">
+                </div>
+                <div class="flex2" >
+                    <p>Dodaj zdjecie:</p>
+                </div>
+                <div class="flex2" >
+                    <input type="file" name="file">
+                </div>
+                <div class="flex2 ">
+                    <textarea name="description" rows="5" placeholder="description"></textarea>
+                </div>
+                <div class="flex2" >
+                    <button type="submit">send</button>
+                </div>
+            </form>
         </div>
     </div>
     </div>
