@@ -74,6 +74,6 @@ class SecurityC extends AppController{
         $user->setPhone($phone);
         $this->userRepository->addUser($user);
 
-        return $this->render('menu', ['messages' => ['You\'ve been succesfully registrated!']]);
+        return $this->render('login2', ['messages' => ['You\'ve been succesfully registrated!']]);
     }
 }

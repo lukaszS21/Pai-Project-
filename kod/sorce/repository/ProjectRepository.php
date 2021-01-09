@@ -73,28 +73,7 @@ class ProjectRepository extends Repository
         return $result;
     }
 
-    public function getProjectsAll(): array
-    {
-        $result = [];
 
-        $stmt = $this->database->connect()->prepare('
-            SELECT * FROM projects WHERE id_assigned_by=;
-        ');
-        $stmt->execute();
-        $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        foreach ($projects as $project) {
-            $result[] = new Project(
-                $project['name'],
-                $project['email'],
-                $project['image'],
-                $project['phone'],
-                $project['description']
-            );
-        }
-
-        return $result;
-    }
     public function getProjectsByUserId(int $id): array
     {
         $result = [];
@@ -104,7 +83,6 @@ class ProjectRepository extends Repository
         ');
         echo "Tutaj".$id;
         $stmt->execute([$id]);
-//        $stmt->execute();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($projects as $project) {
