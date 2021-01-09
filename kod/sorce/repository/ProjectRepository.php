@@ -38,7 +38,7 @@ class ProjectRepository extends Repository
             VALUES (?, ?, ?, ?, ?,?,?)
         ');
 
-        $assignedById = 1;
+        $assignedById = $_COOKIE["id"];
 
         $stmt->execute([
             $project->getName(),
@@ -55,9 +55,56 @@ class ProjectRepository extends Repository
         $result = [];
 
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM projects;
+            SELECT * FROM projects WHERE id_assigned_by=?;
+        ');
+        $stmt->execute([$_COOKIE["id"]]);
+        $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($projects as $project) {
+            $result[] = new Project(
+                $project['name'],
+                $project['email'],
+                $project['image'],
+                $project['phone'],
+                $project['description']
+            );
+        }
+
+        return $result;
+    }
+
+    public function getProjectsAll(): array
+    {
+        $result = [];
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM projects WHERE id_assigned_by=;
         ');
         $stmt->execute();
+        $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+        foreach ($projects as $project) {
+            $result[] = new Project(
+                $project['name'],
+                $project['email'],
+                $project['image'],
+                $project['phone'],
+                $project['description']
+            );
+        }
+
+        return $result;
+    }
+    public function getProjectsByUserId(int $id): array
+    {
+        $result = [];
+
+        $stmt = $this->database->connect()->prepare('
+            SELECT * FROM projects WHERE id_assigned_by=?;
+        ');
+        echo "Tutaj".$id;
+        $stmt->execute([$id]);
+//        $stmt->execute();
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         foreach ($projects as $project) {

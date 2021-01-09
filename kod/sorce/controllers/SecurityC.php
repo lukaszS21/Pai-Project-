@@ -13,14 +13,16 @@ class SecurityC extends AppController{
     /** @noinspection PhpVoidFunctionResultUsedInspection */
     public function login()
         {
-            $userRepository = new UserRepository();
 
             if (!$this->isPost()) {
                 return $this->render('login2');
             }
+            $email = $_POST["email"];
+            $password = $_POST["password"];
+            $userRepository = new UserRepository();
+            $user = $userRepository->getUser($email);
 
-            $email = $_POST['email'];
-            $password = $_POST['password'];
+            setcookie('id', $user->getId(), time()+(86400 * 30), "/");
 
             $user = $userRepository->getUser($email);
 
@@ -32,13 +34,23 @@ class SecurityC extends AppController{
                 return $this->render('login2', ['messages' => ['User with this email not exist!']]);
             }
 
-            if ($user->getPassword() !== $password) {
+            if ($user->getPassword() !== md5($password) ){
                 return $this->render('login2', ['messages' => ['Wrong password!']]);
             }
 
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/menu");
         }
+    public function logout(){
+        if(isset($_COOKIE['id'])){
+
+            unset($_COOKIE['id']);
+            setcookie('id', null, -1, '/');
+        }
+        $url = "http://$_SERVER[HTTP_HOST]";
+        header("Location: {$url}/home1");
+
+    }
 
     public function register()
     {
@@ -57,10 +69,9 @@ class SecurityC extends AppController{
             return $this->render('register', ['messages' => ['Please provide proper password']]);
         }
 
-        //TODO try to use better hash function
-        $user = new User($email, md5($password), $name, $surname);
-        $user->setPhone($phone);
 
+        $user = new User($email, md5($password), $name, $surname,0);
+        $user->setPhone($phone);
         $this->userRepository->addUser($user);
 
         return $this->render('menu', ['messages' => ['You\'ve been succesfully registrated!']]);

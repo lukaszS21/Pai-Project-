@@ -19,9 +19,9 @@
                 <li><a href="projects" class="button">Twoje Kontakty</a></li>
                 <li><a href="home10" class="button">Twoje Zadania</a></li>
                 <li><a href="home5" class="button">Kontakt</a></li>
-                <li><a href=""menu"" class="button">Menu</a></li>
+                <li><a href="menu" class="button">Menu</a></li>
             </ul>
-            <p><a href="home1" class="button">Wyloguj</a> </p>
+            <p><a href="logout" class="button">Wyloguj</a> </p>
         </nav>
         <div class="kontakt">
             <div class=flex2 >

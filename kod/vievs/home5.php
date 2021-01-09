@@ -24,7 +24,7 @@
 
                 <li><a href="menu" class="button">Menu</a></li>
             </ul>
-            <p><a href="home1" class="button">Wyloguj</a> </p>
+            <p><a href="logout" class="button">Wyloguj</a> </p>
     </nav>
             <div class="contact">
                 <div>

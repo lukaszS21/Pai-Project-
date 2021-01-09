@@ -26,7 +26,7 @@
                 <a href="home5" class="button">Kontakt</a>
             </li>
             <li>
-                <a href="home1" class="button">Wyloguj</a>
+                <a href="logout" class="button">Wyloguj</a>
             </li>
 
         </ul>

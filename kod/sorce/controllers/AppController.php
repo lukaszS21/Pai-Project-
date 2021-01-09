@@ -32,4 +32,14 @@ class AppController {
         }
         print $output;
     }
+
+    protected function render2(string $template = null, array $variables = []){
+        if(isset($_COOKIE['id']))
+            $this->render($template,$variables);
+        else {
+
+            $url = "http://$_SERVER[HTTP_HOST]";
+            header("Location: {$url}/home1");
+        }
+    }
 }

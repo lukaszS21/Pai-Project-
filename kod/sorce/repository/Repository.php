@@ -9,4 +9,12 @@ class Repository {
     {
         $this->database = new Database();
     }
+    protected function execute(string $query, array $args = null): PDOStatement{
+        $statement = $this->prepareStatement($query);
+        $statement->execute($args);
+        return $statement;
+    }
+    private function prepareStatement(string $query){
+        return $this->database->connect()->prepare($query);
+    }
 }

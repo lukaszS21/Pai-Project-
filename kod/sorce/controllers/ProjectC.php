@@ -19,8 +19,10 @@ class ProjectC extends AppController
     }
     public function projects()
     {
-        $projects = $this->projectRepository->getProjects();
-        $this->render('projects', ['projects' => $projects]);
+
+        $projects = $this->projectRepository->getProjectsByUserId($_COOKIE["id"]);
+        echo "tutaj".sizeof($projects);
+        $this->render2('projects', ['projects' => $projects]);
     }
 
     public function addProject()
@@ -34,10 +36,10 @@ class ProjectC extends AppController
             );
             $project=new Project($_POST['name'],$_POST['email'],$_FILES['file']['name'],$_POST['phone'],$_POST['description']);
             $this->projectRepository->addProject($project);
-            return $this->render('projects', ['messages' => $this->message, 'projects' => $this->projectRepository->getProjects()]);
+            return $this->render2('projects', ['messages' => $this->message, 'projects' => $this->projectRepository->getProjects()]);
         }
 
-        return $this->render('addProjects', ['messages' => $this->message]);
+        return $this->render2('addProjects', ['messages' => $this->message]);
     }
     public function search()
     {

@@ -9,7 +9,7 @@ class UserRepository extends Repository
     public function getUser(string $email): ?User
     {
         $stmt = $this->database->connect()->prepare('
-            SELECT * FROM users u LEFT JOIN users_details ud 
+            SELECT u.id, u.email, u.password, ud.name, ud.surname FROM users u LEFT JOIN users_details ud 
             ON u.id_user_details = ud.id WHERE email = :email
         ');
         $stmt->bindParam(':email', $email, PDO::PARAM_STR);
@@ -20,12 +20,12 @@ class UserRepository extends Repository
         if ($user == false) {
             return null;
         }
-
         return new User(
             $user['email'],
             $user['password'],
             $user['name'],
-            $user['surname']
+            $user['surname'],
+            $user['id']
         );
     }
     public function addUser(User $user)
@@ -38,8 +38,9 @@ class UserRepository extends Repository
         $stmt->execute([
             $user->getName(),
             $user->getSurname(),
-            $user->getPhone()
+            $user->getPhone(),
         ]);
+
 
         $stmt = $this->database->connect()->prepare('
             INSERT INTO users (email, password, id_user_details)
@@ -51,6 +52,12 @@ class UserRepository extends Repository
             $user->getPassword(),
             $this->getUserDetailsId($user)
         ]);
+        $user->setId($this->getUserId($user));
+
+    }
+    private function getUserId(User $user){
+        $statement = $this->execute('SELECT id FROM public.users WHERE email=? AND password=?', [$user->getEmail(), $user->getPassword()]);
+        return $statement->fetch()['id'];
     }
 
     public function getUserDetailsId(User $user): int

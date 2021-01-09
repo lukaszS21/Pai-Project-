@@ -23,7 +23,7 @@
 
                 <li><a href=""menu"" class="button">Menu</a></li>
             </ul>
-            <p>Wyloguj</p>
+            <p><a href="logout" class="button">Wyloguj</a> </p>
         </nav>
         <div class="kontakt">
             <div class=flex2 style="justify-content: flex-start;">

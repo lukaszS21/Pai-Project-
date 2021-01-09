@@ -25,5 +25,6 @@ Router::post('home10',"HomeC");
 Router::post('home11',"HomeC");
 Router::post('htest',"HomeC");
 Router::post('search',"ProjectC");
+Router::post('logout',"SecurityC");
 Router::run($path);
 
