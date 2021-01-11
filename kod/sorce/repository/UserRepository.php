@@ -28,6 +28,23 @@ class UserRepository extends Repository
             $user['id']
         );
     }
+    public function getUserById()
+    {
+
+        $stmt = $this->execute('
+               SELECT u.id, u.email, u.password, ud.name, ud.surname FROM users u LEFT JOIN users_details ud
+                                                                             ON u.id_user_details = ud.id WHERE u.id=?
+        ',[$_COOKIE['id']]);
+
+        $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        return new User(
+            $user['email'],
+            $user['password'],
+            $user['name'],
+            $user['surname'],
+            $user['id']
+        );
+    }
     public function addUser(User $user)
     {
         $stmt = $this->database->connect()->prepare('

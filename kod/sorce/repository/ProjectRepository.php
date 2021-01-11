@@ -81,7 +81,7 @@ class ProjectRepository extends Repository
         $stmt = $this->database->connect()->prepare('
             SELECT * FROM projects WHERE id_assigned_by=?;
         ');
-        echo "Tutaj".$id;
+
         $stmt->execute([$id]);
         $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 

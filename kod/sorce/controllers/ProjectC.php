@@ -21,7 +21,7 @@ class ProjectC extends AppController
     {
 
         $projects = $this->projectRepository->getProjectsByUserId($_COOKIE["id"]);
-        echo "tutaj".sizeof($projects);
+
         $this->render2('projects', ['projects' => $projects]);
     }
 
