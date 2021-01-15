@@ -36,7 +36,7 @@ class UserRepository extends Repository
                                                                              ON u.id_user_details = ud.id WHERE u.id=?
         ',[$_COOKIE['id']]);
 
-        $user = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        $user = $stmt->fetch(PDO::FETCH_ASSOC);
         return new User(
             $user['email'],
             $user['password'],

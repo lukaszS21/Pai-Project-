@@ -11,7 +11,7 @@ class UserC extends  AppController
     {
         parent::__construct();
         $this->UserRepository =new UserRepository();
-        $this->user = $this->userRepository->getUserById();
+        $this->user = $this->UserRepository->getUserById();
     }
     public function userD()
    {

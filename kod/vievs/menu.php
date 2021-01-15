@@ -34,7 +34,7 @@
     <main>
         <header>
             <div class="user">
-                <i class="fas fa-user"></i>
+                <a href="userD" class="fas fa-user"></a>
             </div>
             <div class="search-bar">
                 <form>

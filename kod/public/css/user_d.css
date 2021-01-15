@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    height: 100%;
+}
+
+
+.flex3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+
+
+}
+v{
+    width: 250px;
+    font: normal normal bold 21px/12px Arial;
+    letter-spacing: 1px;
+    color: #0d0d0d;
+    margin-top: 3em;
+}
