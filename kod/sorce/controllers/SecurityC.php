@@ -21,11 +21,6 @@ class SecurityC extends AppController{
             $password = $_POST["password"];
             $userRepository = new UserRepository();
             $user = $userRepository->getUser($email);
-
-            setcookie('id', $user->getId(), time()+(86400 * 30), "/");
-
-            $user = $userRepository->getUser($email);
-
             if (!$user) {
                 return $this->render('login2', ['messages' => ['User not found!']]);
             }
@@ -37,6 +32,12 @@ class SecurityC extends AppController{
             if ($user->getPassword() !== md5($password) ){
                 return $this->render('login2', ['messages' => ['Wrong password!']]);
             }
+
+            setcookie('id', $user->getId(), time()+(86400 * 30), "/");
+
+            $user = $userRepository->getUser($email);
+
+
 
             $url = "http://$_SERVER[HTTP_HOST]";
             header("Location: {$url}/menu");
@@ -68,7 +69,9 @@ class SecurityC extends AppController{
         if ($password !== $confirmedPassword) {
             return $this->render('register', ['messages' => ['Please provide proper password']]);
         }
-
+        if($email=="" | $password=="" | $name=="" | $surname==""){
+            return $this->render('register', ['messages' => ['Wprowadz dane']]);
+        }
 
         $user = new User($email, md5($password), $name, $surname,0);
         $user->setPhone($phone);

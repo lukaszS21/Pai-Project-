@@ -1,0 +1,148 @@
+@media screen and (max-width: 600px) {
+    .container-grid {
+        max-width: 20em;
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        min-height: 80vh;
+        justify-content: center;
+
+    }
+    .login button{
+        margin-left: 0em;
+    }
+    .contact button {
+        width: 50%;
+        border-radius: 23px;
+        font: normal normal normal 20px/40px Segoe UI;
+        color: #0c0202;
+        letter-spacing: 0px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        border: 1px solid #707070;
+        border-radius: 23px;
+        padding: 4px;
+        opacity: 1;
+        margin-top: 5px;
+
+    }
+
+    h1{
+        margin-right: -0.5em;
+    }
+    .text-menu {
+        display: none;
+    }
+
+    .form {
+        background: #ffffffcf 0% 0% no-repeat padding-box;
+        box-shadow: 0px 6px 6px #00000029;
+        border: 1px solid #0c0202;
+        border-radius: 51px;
+        opacity: 0.6;
+        margin-top: 100px;
+        max-width: 360px;
+        width: 100%;
+        margin: auto;
+    }
+    .rectangle {
+        background: #faf7f7 0% 0% no-repeat padding-box;
+        width: 0;
+        height: 0;
+        margin-top: 80px;
+        width: 0;
+        transform: rotate(10deg);
+        height: 0;
+        margin-left: 20px;
+        border-top: 16px solid white;
+        border-right: 103px solid transparent;
+        border-left: 26px solid transparent;
+    }
+    img{
+        height: 90%;
+    }
+
+
+    .logo-form {
+        background: transparent
+        url("../../../asety/222222222222222222222-removebg-preview.png");
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        top: 0px;
+        left: 0px;
+        width: 119px;
+        height: 89px;
+        border: 0px;
+        opacity: 1;
+    }
+    .form form {
+        max-width: 80%;
+        margin: auto;
+        margin-top: 40px;
+        margin-top: 150px;
+    }
+    .form input {
+        max-width: 300px;
+        width: 100%;
+    }
+    .image-menu {
+        display: none;
+    }
+    .container-menu {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100%;
+        min-height: 100vh;
+    }
+    aside {
+        background: transparent url("../../../asety/paper-3213924_1920.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.55;
+    }
+    .list-menu {
+        list-style-type: none;
+        color: black;
+        opacity: 1;
+        text-align: center;
+        font: normal normal bold 21px/10px Arial;
+        letter-spacing: 0px;
+        color: #000000;
+    }
+    .display-rwd {
+        display: inline;
+    }
+    .list-menu li {
+        margin-top: 80px;
+    }
+    .container-logo {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        text-align: left;
+        font: normal normal normal 10px/10px Segoe UI;
+        letter-spacing: 0px;
+        font-weight: bold;
+        color: #000000;
+        justify-content: space-between;
+        margin-right: 10em;
+    }
+    p{
+        list-style-type: none;
+        text-align: left;
+        font: normal normal normal 15px/10px Segoe UI;
+        letter-spacing: 0px;
+        font-weight: bold;
+        color: #000000;
+    }
+
+
+}
