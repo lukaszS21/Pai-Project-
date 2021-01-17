@@ -21,21 +21,14 @@ section{
     flex-direction: column;
     justify-content: space-around;
 }
-nav {
+.projects>div{
+    border: 1px solid gray;
+    border-radius: 1em 1em 0 0;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    list-style-type: none;
-    text-align: left;
-    font: normal normal normal 30px/40px Segoe UI;
-    letter-spacing: 0px;
-    font-weight: bold;
-    color: #000000;
-    align-items: center;
-    align-content: space-between;
-
-    margin: 10px;
+    justify-content: space-between;
 }
-
 .container{
     width: 100vw;
     height: 100vh;

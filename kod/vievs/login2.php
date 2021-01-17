@@ -2,10 +2,6 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/logowanie.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/media.css">
-    <link rel="stylesheet" type="text/css" href="../public/css/animacje.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
     <title>Login2</title>
 </head>
