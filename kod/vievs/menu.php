@@ -2,6 +2,9 @@
 <head>
 
     <link rel="stylesheet" type="text/css" href="public/css/projects.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animacje.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/logowanie.css">
+
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
     <title>PROJECTS</title>
 </head>

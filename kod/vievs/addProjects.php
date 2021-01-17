@@ -2,6 +2,8 @@
 
 <head>
     <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/media.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animacje.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/8268307b19.js" crossorigin="anonymous"></script>
     <title>Home12</title>
@@ -19,9 +21,10 @@
             <li><a href="home5" class="button">Kontakt</a></li>
             <li><a href="home9" class="button">Historia</a></li>
             <li><a href="menu" class="button">Menu</a></li>
+            <li><a href="logout" class="button">Wyloguj</a></li>
 
         </ul>
-        <p><a href="logout" class="button">Wyloguj</a> </p>
+
     </nav>
     <div class="kontakt">
             <div class=flex >
